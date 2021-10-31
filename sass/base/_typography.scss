@@ -3,7 +3,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: $color-grey-dark;   
+    color: $color-grey-dark-1;   
 }
 
 .header-primary{
@@ -20,6 +20,7 @@ body{
 
         .strike-symbol{
             vertical-align: middle;
+            padding: 0 1rem 0 0;
         }
     }
 
@@ -27,5 +28,32 @@ body{
         display: block;
         font-size: 1.6rem;
         font-weight: 700;
+    }
+}
+
+.heading-secondary{
+    display: inline-block;
+    background-image: linear-gradient(to right bottom, $color-primary-1, $color-primary-2);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0 2rem 2rem rgba($color-black, .2);
+    margin-bottom: 2rem;
+}
+
+.heading-tertiary{
+    font-size: 4rem;
+    font-weight: 400;
+    color: $color-grey-dark-1;
+}
+
+
+.paragraph{
+    font-size: 1.8rem;
+
+    &:not(:last-child){
+        margin-bottom: 3rem;
     }
 }

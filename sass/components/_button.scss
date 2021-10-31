@@ -1,0 +1,21 @@
+.btn{
+
+    &:link, 
+    &:visited{
+        padding: 15px 40px;
+        display: inline-block;
+        border-radius: 100px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: $default-font-size;
+
+        transition: all .2s ease-in-out;
+        border: none;
+        cursor: pointer;
+    }
+
+    &--blue{
+        background-color: $color-primary-2;
+        color: $color-white;
+    }
+}
