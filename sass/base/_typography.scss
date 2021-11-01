@@ -32,23 +32,22 @@ body{
 }
 
 .heading-secondary{
-    display: inline-block;
-    background-image: linear-gradient(to right bottom, $color-primary-1, $color-primary-2);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-white;
     font-size: 5rem;
     letter-spacing: 2px;
     font-weight: 700;
-    text-shadow: 0 2rem 2rem rgba($color-black, .2);
     margin-bottom: 2rem;
+    border-bottom: 0.5px solid $color-white;
 }
 
 .heading-tertiary{
-    font-size: 4rem;
+    font-size: 6rem;
+    display: inline-block;
     font-weight: 400;
-    color: $color-grey-dark-1;
+    background-image: linear-gradient(to right, $color-primary-1, $color-primary-2);
+    -webkit-background-clip: text;
+    color: transparent;
 }
-
 
 .paragraph{
     font-size: 1.8rem;
@@ -56,4 +55,21 @@ body{
     &:not(:last-child){
         margin-bottom: 3rem;
     }
+}
+
+.small-text {
+    display: block;
+    font-size: 20px;
+    color: $color-tertiary-1;
+    margin-bottom: -20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+i{
+    background-image: linear-gradient(to right, $color-primary-1, $color-primary-2);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
 }
