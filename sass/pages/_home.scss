@@ -1,43 +1,92 @@
-.section-launchtime{
-    margin-top: -150px;
-    padding: 25rem 0;
-    background-color: $color-primary-4;
+.section-launchtime {
+  margin-top: -150px;
+  padding: 25rem 0;
+  background-color: $color-primary-4;
 
-    &__info{
-        width: 65%;
-        margin: 0 auto;
-    }
+  &__info {
+    width: 65%;
+    margin: 0 auto;
+  }
 
-    &__cartoon{
-        height: 400px;
-    }
+  &__cartoon {
+    height: 400px;
+  }
 
-    &__pep{
-        background-color: $color-white;
-        padding: 2rem;
-        border-radius: 5px;
-        box-shadow: 0 1rem 2rem rgba($color-black, .2);
-    }
+  &__pep {
+    background-color: $color-white;
+    padding: 4rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
 
-    &__image{
-        width: 100%;
-        height: 100%;
-    }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.section-features{
-    margin-top: -100px;
-    background-color: $color-grey-light-1;
-    transform: skewY(-7deg);
-    padding: 12rem 0 20rem;
+.section-features {
+  margin-top: -100px;
+  background-color: $color-grey-light-1;
+  transform: skewY(-7deg);
+  padding: 12rem 0 15rem;
 
-    &__heading{
-        display: block;
-        width: 65%;
-        margin: 0 auto 80px auto;
-    }
+  &__heading {
+    display: block;
+    width: 65%;
+    margin: 0 auto 80px auto;
+  }
 
-    & > *{
-        transform: skewY(7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-product-review {
+  padding: 100px 50px;
+}
+
+.section-about-us{
+  padding: 8rem 0;
+  background-color: $color-grey-light-1;
+}
+
+.section-contact {
+  padding: 6rem 3rem;
+
+  &__container {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 85%;
+    margin: 0 auto;
+    box-shadow: 0 1rem 1.5rem rgba($color-black, 0.2);
+
+    .row {
+      width: 100%;
+      margin: 0;
     }
+  }
+
+  &__heading {
+    background-color: $color-primary-3;
+    padding: 5.5rem;
+    font-size: 4rem;
+    color: $color-white;
+    -webkit-clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%);
+  }
+
+  &__numbers {
+      padding: 4rem;
+      text-align: center;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        font-weight: 900;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+      }
+    }
+  }
 }

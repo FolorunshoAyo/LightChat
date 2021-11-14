@@ -17,5 +17,10 @@
     &--blue{
         background-color: $color-primary-2;
         color: $color-white;
+
+        &:hover{
+            background-color: $color-white;
+            color: $color-primary-2;
+        }
     }
 }
