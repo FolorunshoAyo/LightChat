@@ -5,7 +5,7 @@
     &__band{
         height: 60px;
         background-image: linear-gradient(105deg, $color-primary-1, $color-primary-2);
-        margin-bottom: 40px;
+        margin-bottom: 25px;
     }
 
     &__text{
@@ -78,6 +78,10 @@
 
             &:not(:last-child){
                 margin-right: $gutter-footer-horizontal;
+            }
+
+            &:last-child{
+                padding-top: 15px; 
             }
         }
     }
