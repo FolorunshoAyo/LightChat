@@ -37,7 +37,7 @@ $(function () {
     
     scrollFunction(".about", "#about", 2500);
 
-    scrollFunctionMobile(".home", "#top", 2500);
+    scrollFunctionMobile(".home-mobile", "#top", 2500);
 
     scrollFunctionMobile(".about-mobile", "#about", 2500);
 
