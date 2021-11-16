@@ -10,6 +10,11 @@
 
   &__cartoon {
     height: 400px;
+
+    @include respond(med-phone){
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__pep {

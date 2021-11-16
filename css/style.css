@@ -96,10 +96,19 @@ body {
         font-size: 3.5rem; } }
     @media only screen and (max-width: 25em) {
       .header-primary--main {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        letter-spacing: 10px; } }
     .header-primary--main .strike-symbol {
       vertical-align: middle;
       padding: 0 1rem 0 0; }
+      @media only screen and (max-width: 37.5em) {
+        .header-primary--main .strike-symbol {
+          width: 35px;
+          height: 60px; } }
+      @media only screen and (max-width: 25em) {
+        .header-primary--main .strike-symbol {
+          width: 25px;
+          height: 40px; } }
   .header-primary--sub {
     display: block;
     font-size: 1.6rem;
@@ -112,6 +121,9 @@ body {
   font-weight: 700;
   margin-bottom: 2rem;
   border-bottom: 0.5px solid #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary--1 {
+      font-size: 3.5rem; } }
 
 .heading-secondary--2 {
   font-weight: 700;
@@ -143,6 +155,13 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 5px; }
+  @media only screen and (max-width: 37.5em) {
+    .small-text {
+      font-size: 2.5rem;
+      letter-spacing: 3px; } }
+  @media only screen and (max-width: 25em) {
+    .small-text {
+      margin-bottom: -15px; } }
 
 i {
   background-image: linear-gradient(to right, #2dc3d4, #6482e1);
@@ -237,6 +256,12 @@ i {
     display: block;
     margin-top: 30px;
     animation: floating 3s ease-in-out infinite; }
+    @media only screen and (max-width: 37.5em) {
+      .countdown-timer .countdown {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 25em) {
+      .countdown-timer .countdown {
+        font-size: 2.2rem; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -269,7 +294,7 @@ i {
     background-color: #fff;
     transition: all 0.3s ease-in; }
   .menu-bar.active .line-1 {
-    transform: rotate(135deg) translateY(-15px); }
+    transform: rotate(135deg) translateY(-17px); }
   .menu-bar.active .line-2 {
     background-color: transparent; }
   .menu-bar.active .line-3 {
@@ -545,7 +570,7 @@ i {
   list-style-type: none;
   display: none; }
   .header-mobile-nav li {
-    border-bottom: 2px solid #6482e1; }
+    border-bottom: 5px solid #6482e1; }
     .header-mobile-nav li a:link, .header-mobile-nav li a:visited {
       padding: 10px;
       display: block;
@@ -570,6 +595,10 @@ i {
     margin: 0 auto; }
   .section-launchtime__cartoon {
     height: 400px; }
+    @media only screen and (max-width: 37.5em) {
+      .section-launchtime__cartoon {
+        max-width: 100%;
+        height: auto; } }
   .section-launchtime__pep {
     background-color: #fff;
     padding: 4rem;
