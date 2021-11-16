@@ -4,11 +4,25 @@
 
   &__box {
     padding: 20px;
+
+    @include respond(tab-port){
+      text-align: center;
+    }
   }
 
   &__img {
     width: 100%;
     height: 250px;
+
+    @include respond(tab-port){
+      width: 500px;
+      height: 350px;
+    }
+
+    @include respond(med-phone){
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__caption {

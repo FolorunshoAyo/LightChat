@@ -17,6 +17,10 @@
     padding: 4rem;
     border-radius: 5px;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    @include respond(tab-port){
+      text-align: center;
+    }
   }
 
   &__image {
@@ -152,6 +156,10 @@
         text-align: center;
       }
 
+      @include respond(small-phone){
+        padding: 45px 25px;
+      }
+
       li {
         font-weight: 900;
         font-size: 25px;
@@ -163,6 +171,10 @@
 
         @include respond(med-phone){
           font-size: 23px;
+        }
+
+        @include respond(small-phone){
+          font-size: 15px;
         }
       }
     }

@@ -5,7 +5,7 @@
     &__band{
         height: 60px;
         background-image: linear-gradient(105deg, $color-primary-1, $color-primary-2);
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     &__text{
@@ -73,11 +73,22 @@
 
         @include clearfix;
 
+        @include respond(med-phone){
+            width: 100%;
+            margin: 0;
+            padding: 1rem;
+        }
+
         [class^="col-"] {
             float: left;
 
             &:not(:last-child){
                 margin-right: $gutter-footer-horizontal;
+
+                @include respond(med-phone){
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
             }
 
             &:last-child{
@@ -88,5 +99,9 @@
 
     .col-1-of-2{
         width: calc((100% - #{$gutter-horizontal}) / 2);
+
+        @include respond(med-phone){
+            width: 100%;
+        }
     }
 }
