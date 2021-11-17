@@ -88,6 +88,10 @@ body {
   font-weight: 400;
   color: $color-primary-3;
 
+  @include respond(med-phone){
+    font-size: 4.2rem;
+  }
+
   @supports (-webkit-background-clip: text) {
     background-image: linear-gradient(
       to right,
@@ -138,7 +142,3 @@ i {
   margin-bottom: 15px;
 }
 
-.popup-heading {
-  font-size: 3rem;
-  color: $color-primary-4;
-}
